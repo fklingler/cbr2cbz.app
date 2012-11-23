@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0FB03EBF165F5F4E003EEB03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB03EBE165F5F4E003EEB03 /* Cocoa.framework */; };
-		0FB03EC1165F5F4E003EEB03 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB03EC0165F5F4E003EEB03 /* MacRuby.framework */; };
 		0FB03ECA165F5F4E003EEB03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FB03EC8165F5F4E003EEB03 /* InfoPlist.strings */; };
 		0FB03ECC165F5F4E003EEB03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB03ECB165F5F4E003EEB03 /* main.m */; };
 		0FB03ED1165F5F4E003EEB03 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB03ECF165F5F4E003EEB03 /* MainMenu.xib */; };
 		0FB03ED4165F5F4E003EEB03 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0FB03ED3165F5F4E003EEB03 /* rb_main.rb */; };
 		0FB03ED6165F5F4E003EEB03 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0FB03ED5165F5F4E003EEB03 /* AppDelegate.rb */; };
+		0FEEF13C165F5FDD0090B887 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEEF13B165F5FDD0090B887 /* MacRuby.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,6 @@
 /* Begin PBXFileReference section */
 		0FB03EBA165F5F4E003EEB03 /* cbr2cbz-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cbr2cbz-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB03EBE165F5F4E003EEB03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		0FB03EC0165F5F4E003EEB03 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
 		0FB03EC7165F5F4E003EEB03 /* cbr2cbz-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cbr2cbz-app-Info.plist"; sourceTree = "<group>"; };
 		0FB03EC9165F5F4E003EEB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0FB03ECB165F5F4E003EEB03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		0FB03ED0165F5F4E003EEB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0FB03ED3165F5F4E003EEB03 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		0FB03ED5165F5F4E003EEB03 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		0FEEF13B165F5FDD0090B887 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FB03EBF165F5F4E003EEB03 /* Cocoa.framework in Frameworks */,
-				0FB03EC1165F5F4E003EEB03 /* MacRuby.framework in Frameworks */,
+				0FEEF13C165F5FDD0090B887 /* MacRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +72,8 @@
 		0FB03EBD165F5F4E003EEB03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FEEF13B165F5FDD0090B887 /* MacRuby.framework */,
 				0FB03EBE165F5F4E003EEB03 /* Cocoa.framework */,
-				0FB03EC0165F5F4E003EEB03 /* MacRuby.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -291,6 +291,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					/Library/Frameworks,
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -308,6 +309,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					/Library/Frameworks,
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -349,6 +351,7 @@
 				0FB03EDB165F5F4E003EEB03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FB03EDC165F5F4E003EEB03 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -357,6 +360,7 @@
 				0FB03EDE165F5F4E003EEB03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
