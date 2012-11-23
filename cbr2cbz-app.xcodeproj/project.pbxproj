@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FB03EBF165F5F4E003EEB03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB03EBE165F5F4E003EEB03 /* Cocoa.framework */; };
+		0FB03EC1165F5F4E003EEB03 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB03EC0165F5F4E003EEB03 /* MacRuby.framework */; };
+		0FB03ECA165F5F4E003EEB03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FB03EC8165F5F4E003EEB03 /* InfoPlist.strings */; };
+		0FB03ECC165F5F4E003EEB03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB03ECB165F5F4E003EEB03 /* main.m */; };
+		0FB03ED1165F5F4E003EEB03 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB03ECF165F5F4E003EEB03 /* MainMenu.xib */; };
+		0FB03ED4165F5F4E003EEB03 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0FB03ED3165F5F4E003EEB03 /* rb_main.rb */; };
+		0FB03ED6165F5F4E003EEB03 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0FB03ED5165F5F4E003EEB03 /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FB03EC3165F5F4E003EEB03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FB03EB1165F5F4E003EEB03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FB03EB9165F5F4E003EEB03;
+			remoteInfo = "cbr2cbz-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FB03EBA165F5F4E003EEB03 /* cbr2cbz-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cbr2cbz-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB03EBE165F5F4E003EEB03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0FB03EC0165F5F4E003EEB03 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		0FB03EC7165F5F4E003EEB03 /* cbr2cbz-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cbr2cbz-app-Info.plist"; sourceTree = "<group>"; };
+		0FB03EC9165F5F4E003EEB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FB03ECB165F5F4E003EEB03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FB03ECD165F5F4E003EEB03 /* cbr2cbz-app-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cbr2cbz-app-Prefix.pch"; sourceTree = "<group>"; };
+		0FB03ED0165F5F4E003EEB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0FB03ED3165F5F4E003EEB03 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		0FB03ED5165F5F4E003EEB03 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FB03EB7165F5F4E003EEB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB03EBF165F5F4E003EEB03 /* Cocoa.framework in Frameworks */,
+				0FB03EC1165F5F4E003EEB03 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FB03EAF165F5F4E003EEB03 = {
+			isa = PBXGroup;
+			children = (
+				0FB03EC5165F5F4E003EEB03 /* cbr2cbz-app */,
+				0FB03EBD165F5F4E003EEB03 /* Frameworks */,
+				0FB03EBB165F5F4E003EEB03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FB03EBB165F5F4E003EEB03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FB03EBA165F5F4E003EEB03 /* cbr2cbz-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FB03EBD165F5F4E003EEB03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FB03EBE165F5F4E003EEB03 /* Cocoa.framework */,
+				0FB03EC0165F5F4E003EEB03 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FB03EC5165F5F4E003EEB03 /* cbr2cbz-app */ = {
+			isa = PBXGroup;
+			children = (
+				0FB03ED5165F5F4E003EEB03 /* AppDelegate.rb */,
+				0FB03ECE165F5F4E003EEB03 /* Resources */,
+				0FB03ED2165F5F4E003EEB03 /* Other Sources */,
+				0FB03EC6165F5F4E003EEB03 /* Supporting Files */,
+			);
+			path = "cbr2cbz-app";
+			sourceTree = "<group>";
+		};
+		0FB03EC6165F5F4E003EEB03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FB03EC7165F5F4E003EEB03 /* cbr2cbz-app-Info.plist */,
+				0FB03EC8165F5F4E003EEB03 /* InfoPlist.strings */,
+				0FB03ECB165F5F4E003EEB03 /* main.m */,
+				0FB03ECD165F5F4E003EEB03 /* cbr2cbz-app-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FB03ECE165F5F4E003EEB03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FB03ECF165F5F4E003EEB03 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0FB03ED2165F5F4E003EEB03 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0FB03ED3165F5F4E003EEB03 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		0FB03EC2165F5F4E003EEB03 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 0FB03EDC165F5F4E003EEB03 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				0FB03EC4165F5F4E003EEB03 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		0FB03EB9165F5F4E003EEB03 /* cbr2cbz-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FB03ED9165F5F4E003EEB03 /* Build configuration list for PBXNativeTarget "cbr2cbz-app" */;
+			buildPhases = (
+				0FB03EB6165F5F4E003EEB03 /* Sources */,
+				0FB03EB7165F5F4E003EEB03 /* Frameworks */,
+				0FB03EB8165F5F4E003EEB03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cbr2cbz-app";
+			productName = "cbr2cbz-app";
+			productReference = 0FB03EBA165F5F4E003EEB03 /* cbr2cbz-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FB03EB1165F5F4E003EEB03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "François KLINGLER";
+			};
+			buildConfigurationList = 0FB03EB4165F5F4E003EEB03 /* Build configuration list for PBXProject "cbr2cbz-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0FB03EAF165F5F4E003EEB03;
+			productRefGroup = 0FB03EBB165F5F4E003EEB03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FB03EB9165F5F4E003EEB03 /* cbr2cbz-app */,
+				0FB03EC2165F5F4E003EEB03 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FB03EB8165F5F4E003EEB03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB03ECA165F5F4E003EEB03 /* InfoPlist.strings in Resources */,
+				0FB03ED1165F5F4E003EEB03 /* MainMenu.xib in Resources */,
+				0FB03ED4165F5F4E003EEB03 /* rb_main.rb in Resources */,
+				0FB03ED6165F5F4E003EEB03 /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FB03EB6165F5F4E003EEB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB03ECC165F5F4E003EEB03 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FB03EC4165F5F4E003EEB03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FB03EB9165F5F4E003EEB03 /* cbr2cbz-app */;
+			targetProxy = 0FB03EC3165F5F4E003EEB03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FB03EC8165F5F4E003EEB03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FB03EC9165F5F4E003EEB03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0FB03ECF165F5F4E003EEB03 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FB03ED0165F5F4E003EEB03 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FB03ED7165F5F4E003EEB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0FB03ED8165F5F4E003EEB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0FB03EDA165F5F4E003EEB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cbr2cbz-app/cbr2cbz-app-Prefix.pch";
+				INFOPLIST_FILE = "cbr2cbz-app/cbr2cbz-app-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0FB03EDB165F5F4E003EEB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cbr2cbz-app/cbr2cbz-app-Prefix.pch";
+				INFOPLIST_FILE = "cbr2cbz-app/cbr2cbz-app-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0FB03EDD165F5F4E003EEB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		0FB03EDE165F5F4E003EEB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FB03EB4165F5F4E003EEB03 /* Build configuration list for PBXProject "cbr2cbz-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FB03ED7165F5F4E003EEB03 /* Debug */,
+				0FB03ED8165F5F4E003EEB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FB03ED9165F5F4E003EEB03 /* Build configuration list for PBXNativeTarget "cbr2cbz-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FB03EDA165F5F4E003EEB03 /* Debug */,
+				0FB03EDB165F5F4E003EEB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0FB03EDC165F5F4E003EEB03 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FB03EDD165F5F4E003EEB03 /* Debug */,
+				0FB03EDE165F5F4E003EEB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FB03EB1165F5F4E003EEB03 /* Project object */;
+}
