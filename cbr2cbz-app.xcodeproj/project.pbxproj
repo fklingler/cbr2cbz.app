@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FA0F7A0165FF5D70071B023 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA0F79F165FF5D70071B023 /* AppKit.framework */; };
 		0FB03EBF165F5F4E003EEB03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB03EBE165F5F4E003EEB03 /* Cocoa.framework */; };
 		0FB03ECA165F5F4E003EEB03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FB03EC8165F5F4E003EEB03 /* InfoPlist.strings */; };
 		0FB03ECC165F5F4E003EEB03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB03ECB165F5F4E003EEB03 /* main.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FA0F79F165FF5D70071B023 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0FB03EBA165F5F4E003EEB03 /* cbr2cbz-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cbr2cbz-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB03EBE165F5F4E003EEB03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0FB03EC7165F5F4E003EEB03 /* cbr2cbz-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cbr2cbz-app-Info.plist"; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA0F7A0165FF5D70071B023 /* AppKit.framework in Frameworks */,
 				0FB03EBF165F5F4E003EEB03 /* Cocoa.framework in Frameworks */,
 				0FEEF13C165F5FDD0090B887 /* MacRuby.framework in Frameworks */,
 			);
@@ -72,6 +75,7 @@
 		0FB03EBD165F5F4E003EEB03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FA0F79F165FF5D70071B023 /* AppKit.framework */,
 				0FEEF13B165F5FDD0090B887 /* MacRuby.framework */,
 				0FB03EBE165F5F4E003EEB03 /* Cocoa.framework */,
 			);
@@ -121,11 +125,12 @@
 /* Begin PBXLegacyTarget section */
 		0FB03EC2165F5F4E003EEB03 /* Deployment */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "--compile --embed";
+			buildArgumentsString = "--compile --embed --gem cbr2cbz";
 			buildConfigurationList = 0FB03EDC165F5F4E003EEB03 /* Build configuration list for PBXLegacyTarget "Deployment" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/local/bin/macruby_deploy;
+			buildWorkingDirectory = "";
 			dependencies = (
 				0FB03EC4165F5F4E003EEB03 /* PBXTargetDependency */,
 			);
